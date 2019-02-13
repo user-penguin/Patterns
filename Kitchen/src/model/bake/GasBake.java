@@ -1,6 +1,6 @@
-package model;
+package model.bake;
 
-public class GasBake implements IBake {
+public class GasBake implements Bake {
     private boolean Cell1;
     private boolean Cell2;
     private boolean Cell3;

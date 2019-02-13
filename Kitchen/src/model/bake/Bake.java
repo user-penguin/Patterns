@@ -1,6 +1,6 @@
-package model;
+package model.bake;
 
-public interface IBake {
+public interface Bake {
     public void turnOnFirstCell();
     public void turnOnSecondCell();
     public void turnOnFThirdCell();

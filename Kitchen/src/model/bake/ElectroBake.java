@@ -1,6 +1,6 @@
-package model;
+package model.bake;
 
-public class ElectroBake implements IBake {
+public class ElectroBake implements Bake {
     private boolean Cell1;
     private boolean Cell2;
     private boolean Cell3;
