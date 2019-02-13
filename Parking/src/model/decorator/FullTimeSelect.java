@@ -1,11 +1,11 @@
 // обёртка в фулл-тайм внедорожник с выключенными блокировками
-package model.decortor;
+package model.decorator;
 
 import model.Car;
 import model.car_component.Differential;
 
-public class fullTimeSelect extends BaseSuperSelect {
-    fullTimeSelect(SuperSelect superSelect) {
+public class FullTimeSelect extends BaseSuperSelect {
+    FullTimeSelect(SuperSelect superSelect) {
         super(superSelect);
     }
 

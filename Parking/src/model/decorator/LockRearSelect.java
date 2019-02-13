@@ -1,4 +1,4 @@
-package model.decortor;
+package model.decorator;
 
 import model.Car;
 import model.car_component.Differential;
