@@ -9,8 +9,13 @@ public interface Car {
     public void stop();
     public void turnLeft();
     public void turnRight();
+
     // методы для работы с дифференциалами
     public void setFrontDifferential(Differential differential);
     public void setCentralDifferential(Differential differential);
     public void setRearDifferential(Differential differential);
+
+    public Differential getFrontDifferential();
+    public Differential getCentralDifferential();
+    public Differential getRearDifferential();
 }

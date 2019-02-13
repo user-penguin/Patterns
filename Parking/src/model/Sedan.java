@@ -7,7 +7,7 @@ public class Sedan implements Car {
     private Differential centralDifferential;
     private Differential rearDifferential;
 
-    Sedan() {
+    public Sedan() {
         frontDifferential = new Differential(false, false, false);
         centralDifferential = new Differential(true, true, true);
         rearDifferential = new Differential(true, true, false);
@@ -56,5 +56,20 @@ public class Sedan implements Car {
     @Override
     public void setRearDifferential(Differential differential) {
         this.rearDifferential = differential;
+    }
+
+    @Override
+    public Differential getFrontDifferential() {
+        return frontDifferential;
+    }
+
+    @Override
+    public Differential getCentralDifferential() {
+        return centralDifferential;
+    }
+
+    @Override
+    public Differential getRearDifferential() {
+        return rearDifferential;
     }
 }

@@ -10,4 +10,28 @@ public class Differential {
         this.isTurnedOn = isTurnedOn;
         this.isLocked = isLocked;
     }
+
+    public void install() {
+        this.isExist = true;
+    }
+
+    public void uninstall() {
+        this.isExist = false;
+    }
+
+    public void lock() {
+        this.isLocked = true;
+    }
+
+    public void unlock() {
+        this.isLocked = false;
+    }
+
+    public void turnOn() {
+        this.isTurnedOn = true;
+    }
+
+    public void turnOff() {
+        this.isTurnedOn = false;
+    }
 }
