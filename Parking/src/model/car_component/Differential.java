@@ -11,6 +11,12 @@ public class Differential {
         this.isLocked = isLocked;
     }
 
+    public Differential() {
+        this.isExist = false;
+        this.isTurnedOn = false;
+        this.isLocked = false;
+    }
+
     public void install() {
         this.isExist = true;
     }

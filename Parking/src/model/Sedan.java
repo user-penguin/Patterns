@@ -8,9 +8,9 @@ public class Sedan implements Car {
     private Differential rearDifferential;
 
     public Sedan() {
-        frontDifferential = new Differential(false, false, false);
-        centralDifferential = new Differential(true, true, true);
-        rearDifferential = new Differential(true, true, false);
+        frontDifferential = new Differential();
+        centralDifferential = new Differential();
+        rearDifferential = new Differential();
     }
 
     @Override

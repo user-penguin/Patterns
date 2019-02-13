@@ -8,10 +8,11 @@ public class SUV implements Car {
     private Differential rearDifferential;
 
     public SUV() {
-        frontDifferential = new Differential(true, true, false);
-        centralDifferential = new Differential(true, true, false);
-        rearDifferential = new Differential(true, true, false);
+        frontDifferential = new Differential();
+        centralDifferential = new Differential();
+        rearDifferential = new Differential();
     }
+
     @Override
     public void startEngine() {
 
