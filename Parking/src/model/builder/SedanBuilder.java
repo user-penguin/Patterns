@@ -1,34 +1,64 @@
 package model.builder;
 
+import model.ControlSystem;
 import model.Sedan;
+import model.car_component.Differential;
 import model.car_component.Gearbox;
+import model.car_component.SecurityComplex;
 import model.car_component.Wheel;
-import model.factory_method.SedanFactory;
 
 public class SedanBuilder implements CarBuilder {
-    private Sedan result;
+    private Differential frontDifferential;
+    private Differential centralDifferential;
+    private Differential rearDifferential;
+    private ControlSystem controlSystem;
+    private Wheel[] wheels;
+    private Gearbox gearbox;
+    private SecurityComplex securityComplex;
+
     @Override
-    public void reset() {
-        result = new Sedan();
+    public void setFrontDiff() {
+        this.frontDifferential = new Differential(false, false, false);
+    }
+
+    @Override
+    public void setCentralDiff() {
+        this.centralDifferential = new Differential(false, false, false);
+    }
+
+    @Override
+    public void setRearDiff() {
+        this.rearDifferential = new Differential(true, true, false);
+    }
+
+    @Override
+    public void setControlSystem() {
+        this.controlSystem = new ControlSystem();
     }
 
     @Override
     public void setGearbox() {
-        result.setGearbox(new Gearbox(6));
+        this.gearbox = new Gearbox(6);
     }
 
     @Override
     public void setWheel() {
         Wheel[] wheels = new Wheel[4];
         for (Wheel wheel: wheels) {
+            wheel.profile = 45;
             wheel.radius = 17;
-            wheel.profile = 60;
             wheel.width = 225;
         }
-        this.result.setWheels(wheels);
+        this.wheels = wheels;
+    }
+
+    @Override
+    public void setSecurityComplex() {
+        this.securityComplex = new SecurityComplex();
     }
 
     public Sedan getResult() {
-        return this.result;
+        return new Sedan(frontDifferential, centralDifferential, rearDifferential, controlSystem, wheels,
+                gearbox, securityComplex);
     }
 }

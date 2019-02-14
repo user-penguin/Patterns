@@ -2,6 +2,7 @@ package model;
 
 import model.car_component.Differential;
 import model.car_component.Gearbox;
+import model.car_component.SecurityComplex;
 import model.car_component.Wheel;
 
 public class SUV implements Car {
@@ -11,12 +12,25 @@ public class SUV implements Car {
     private ControlSystem controlSystem;
     private Wheel[] wheels;
     private Gearbox gearbox;
+    private SecurityComplex securityComplex;
 
     public SUV() {
         frontDifferential = new Differential();
         centralDifferential = new Differential();
         rearDifferential = new Differential();
         controlSystem = new ControlSystem();
+    }
+
+    // полный  конструктор для билдера
+    public SUV(Differential frDiff, Differential cenDiff, Differential rrDiff, ControlSystem controlSystems,
+               Wheel[] wheels, Gearbox gearbox, SecurityComplex security) {
+        this.frontDifferential = frDiff;
+        this.centralDifferential = cenDiff;
+        this.rearDifferential = rrDiff;
+        this.controlSystem = controlSystems;
+        this.wheels = wheels;
+        this.gearbox = gearbox;
+        this.securityComplex = security;
     }
 
     public void setWheels(Wheel[] wheels) {
