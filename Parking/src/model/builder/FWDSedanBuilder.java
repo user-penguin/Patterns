@@ -7,7 +7,7 @@ import model.car_component.Gearbox;
 import model.car_component.SecurityComplex;
 import model.car_component.Wheel;
 
-public class SedanBuilder implements CarBuilder {
+public class FWDSedanBuilder implements CarBuilder {
     private Differential frontDifferential;
     private Differential centralDifferential;
     private Differential rearDifferential;
@@ -18,7 +18,7 @@ public class SedanBuilder implements CarBuilder {
 
     @Override
     public void setFrontDiff() {
-        this.frontDifferential = new Differential(false, false, false);
+        this.frontDifferential = new Differential(true, true, false);
     }
 
     @Override
@@ -28,7 +28,7 @@ public class SedanBuilder implements CarBuilder {
 
     @Override
     public void setRearDiff() {
-        this.rearDifferential = new Differential(true, true, false);
+        this.rearDifferential = new Differential(false, false, false);
     }
 
     @Override

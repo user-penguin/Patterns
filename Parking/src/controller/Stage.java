@@ -4,5 +4,7 @@ public enum Stage {
     MainMenu,
     CarList,
     AddingCar,
-    SelectCar
+    SelectCar,
+    Successful,
+    EndOfWork
 }
