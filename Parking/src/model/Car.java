@@ -5,10 +5,8 @@ import model.car_component.Differential;
 public interface Car {
     public void startEngine();
     public void stopEngine();
-    public void runAhead();
-    public void stop();
-    public void turnLeft();
-    public void turnRight();
+    public void lightsOn();
+    public void lightsOff();
 
     // методы для работы с дифференциалами
     public void setFrontDifferential(Differential differential);
