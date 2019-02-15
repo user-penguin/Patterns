@@ -4,6 +4,7 @@ import model.car_component.Differential;
 import model.car_component.Gearbox;
 import model.car_component.SecurityComplex;
 import model.car_component.Wheel;
+import model.observer.SmartDevice;
 
 public class Sedan implements Car {
     private Differential frontDifferential;
@@ -89,5 +90,20 @@ public class Sedan implements Car {
     @Override
     public Differential getRearDifferential() {
         return rearDifferential;
+    }
+
+    @Override
+    public void subscribe(SmartDevice smartDevice) {
+
+    }
+
+    @Override
+    public void unsubscribe(SmartDevice smartDevice) {
+
+    }
+
+    @Override
+    public void notifySubscribers() {
+
     }
 }

@@ -29,7 +29,7 @@ public class SUV implements Car {
 
     // полный  конструктор для билдера
     public SUV(Differential frDiff, Differential cenDiff, Differential rrDiff, ControlSystem controlSystems,
-               Wheel[] wheels, Gearbox gearbox, SecurityComplex security,) {
+               Wheel[] wheels, Gearbox gearbox, SecurityComplex security) {
         this.frontDifferential = frDiff;
         this.centralDifferential = cenDiff;
         this.rearDifferential = rrDiff;

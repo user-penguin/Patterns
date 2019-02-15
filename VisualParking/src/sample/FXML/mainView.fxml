@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" prefHeight="580.0" prefWidth="1000.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="622.0" prefWidth="1034.0">
+         <children>
+            <TabPane fx:id="tabpane" prefHeight="580.0" prefWidth="1000.0" side="LEFT" stylesheets="@../CSS/mainView.css" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab>
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="516.0" prefWidth="930.0" />
+                  </content>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/garage.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                </Tab>
+                <Tab>
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/smartphone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                </Tab>
+                  <Tab>
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/key.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
