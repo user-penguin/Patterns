@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
@@ -27,7 +28,7 @@
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="516.0" prefWidth="930.0" style="-fx-background-color: #B2CEF0;">
                            <children>
                               <Label fx:id="welcomeLabel" layoutX="278.0" layoutY="14.0" stylesheets="@../CSS/label.css" text="Hi, dear friend!" />
-                              <GridPane layoutX="25.0" layoutY="70.0" prefHeight="478.0" prefWidth="881.0" style="-fx-background-color: #DBE7F5;">
+                              <GridPane fx:id="garageGridPane" layoutX="25.0" layoutY="70.0" prefHeight="478.0" prefWidth="881.0" style="-fx-background-color: #DBE7F5;">
                                 <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -40,7 +41,7 @@
                                  <children>
                                     <Pane prefHeight="200.0" prefWidth="200.0">
                                        <children>
-                                          <Button fx:id="addCarButton" alignment="CENTER" contentDisplay="CENTER" layoutX="79.0" layoutY="53.0" mnemonicParsing="false" opacity="0.98" prefHeight="133.0" prefWidth="137.0" stylesheets="@../CSS/bigbaton.css">
+                                          <Button fx:id="addCarButton" alignment="CENTER" contentDisplay="CENTER" layoutX="79.0" layoutY="53.0" mnemonicParsing="false" onAction="#addCar" opacity="0.98" prefHeight="133.0" prefWidth="137.0" stylesheets="@../CSS/bigbaton.css">
                                              <graphic>
                                                 <ImageView fitHeight="103.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
                                                    <image>
@@ -51,6 +52,11 @@
                                           </Button>
                                        </children>
                                     </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                                  </children>
                               </GridPane>
                            </children></AnchorPane>
@@ -77,7 +83,19 @@
                 </Tab>
                   <Tab>
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #B2CEF0;" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #B2CEF0;">
+                           <children>
+                              <Pane layoutX="77.0" layoutY="45.0" prefHeight="490.0" prefWidth="777.0" style="-fx-background-color: #DBE7F5;">
+                                 <children>
+                                    <ImageView fitHeight="317.0" fitWidth="636.0" layoutX="72.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icons/starline.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text layoutX="407.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тачку спиздили, проснись,я ору" wrappingWidth="187.7294921875" />
+                                 </children>
+                              </Pane>
+                           </children></AnchorPane>
                     </content>
                      <graphic>
                         <ImageView fitHeight="42.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">

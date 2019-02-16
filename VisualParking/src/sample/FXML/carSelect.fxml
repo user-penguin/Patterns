@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="171.0" prefWidth="500.0" style="-fx-border-radius: 20; -fx-border-width: 2; -fx-background-color: #DBE7F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="offRoadButton" layoutX="27.0" layoutY="31.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="125.0" stylesheets="@../CSS/bigbaton.css">
+         <graphic>
+            <ImageView fitHeight="66.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/4x4Color.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="raceButton" layoutX="191.0" layoutY="31.0" minHeight="118.0" minWidth="118.0" mnemonicParsing="false" stylesheets="@../CSS/bigbaton.css">
+         <graphic>
+            <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/racing.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="regularCarButton" layoutX="350.0" layoutY="31.0" minHeight="118.0" minWidth="118.0" mnemonicParsing="false" stylesheets="@../CSS/bigbaton.css">
+         <graphic>
+            <ImageView fitHeight="85.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/car.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

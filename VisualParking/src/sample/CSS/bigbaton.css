@@ -1,4 +1,25 @@
-#addCarButton {
+#addCarButton  {
+    -fx-background-color: #B2CEF0;
+    -fx-background-radius: 15;
+    -fx-border-color: #d6f7ff;
+    -fx-border-radius: 15;
+}
+
+#offRoadButton {
+    -fx-background-color: #B2CEF0;
+    -fx-background-radius: 15;
+    -fx-border-color: #d6f7ff;
+    -fx-border-radius: 15;
+}
+
+#raceButton {
+    -fx-background-color: #B2CEF0;
+    -fx-background-radius: 15;
+    -fx-border-color: #d6f7ff;
+    -fx-border-radius: 15;
+}
+
+#regularCarButton {
     -fx-background-color: #B2CEF0;
     -fx-background-radius: 15;
     -fx-border-color: #d6f7ff;
