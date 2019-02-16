@@ -1,0 +1,10 @@
+#welcomeLabel {
+    -fx-text-fill: white;
+    -fx-border-color: #d6f7ff;
+    -fx-background-color: #2284B4;
+    -fx-alignment: center;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-padding: 5 100 5 100;
+    -fx-font-family: "Tomson Talks";
+}

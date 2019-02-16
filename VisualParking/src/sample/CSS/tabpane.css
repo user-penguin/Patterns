@@ -13,18 +13,20 @@
 }
 
 .tab {
-    -fx-background-color: #FFFFFF;
+    -fx-background-color: #DBE7F5;
     -fx-background-insets: 0.0;
     -fx-background-radius: 0.0;
     -fx-padding: 0 30 0 30;
+    -fx-border-width: 5 0 0 0;
+    -fx-border-color: #FDF1E3;
 }
 
 .tab:selected {
-    -fx-background-color: #FAFCFB;
+    -fx-background-color: #B2CEF0;
     -fx-background-radius: 0;
     -fx-background-insets: 0;
     -fx-border-width: 5 0 0 0;
-    -fx-border-color: #3FE387;
+    -fx-border-color: #2284B4;
 }
 
 .tab:focused {
