@@ -11,6 +11,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.Garage;
+import model.builder.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -45,7 +46,7 @@ public class Controller {
     @FXML
     private void addSUV() {
         System.out.println("Был выбран джип");
-        this.garage.cars.add()
+        this.garage.cars.add(new SUVBuilder().getResult());
         Stage stage = (Stage) offRoadButton.getScene().getWindow();
         stage.close();
     }
@@ -53,7 +54,7 @@ public class Controller {
     @FXML
     private void addRWDSedan() {
         System.out.println("Был выбран заднеприводный седан");
-
+        this.garage.cars.add(new RWDSedanBuilder().getResult());
         Stage stage = (Stage) raceButton.getScene().getWindow();
         stage.close();
     }
@@ -61,7 +62,7 @@ public class Controller {
     @FXML
     private void addFWDSedan() {
         System.out.println("Был выбран переднеприводный седан");
-
+        this.garage.cars.add(new FWDSedanBuilder().getResult());
         Stage stage = (Stage) regularCarButton.getScene().getWindow();
         stage.close();
     }
