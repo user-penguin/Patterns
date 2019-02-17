@@ -1,13 +1,11 @@
 package sample;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
@@ -28,6 +26,12 @@ public class Controller {
     private Button addCarButton;
 
     @FXML
+    private Button offRoadButton, raceButton, regularCarButton;
+
+    @FXML
+    private Stage lastStage;
+
+    @FXML
     //определение дефолтных значений элементов(если потребуется)
     public void initialize() {
 
@@ -36,6 +40,30 @@ public class Controller {
     public Controller() {
         garage = Garage.getInstance();
         paneBank = new ArrayList<>();
+    }
+
+    @FXML
+    private void addSUV() {
+        System.out.println("Был выбран джип");
+        this.garage.cars.add()
+        Stage stage = (Stage) offRoadButton.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    private void addRWDSedan() {
+        System.out.println("Был выбран заднеприводный седан");
+
+        Stage stage = (Stage) raceButton.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    private void addFWDSedan() {
+        System.out.println("Был выбран переднеприводный седан");
+
+        Stage stage = (Stage) regularCarButton.getScene().getWindow();
+        stage.close();
     }
 
     @FXML
@@ -53,6 +81,7 @@ public class Controller {
         selectStage.initOwner(Main.getPrimaryStage());
         selectStage.setTitle("Выберите машинку");
         selectStage.setScene(new Scene(root, 500, 171));
+        this.lastStage = selectStage;
         selectStage.show();
     }
 }
